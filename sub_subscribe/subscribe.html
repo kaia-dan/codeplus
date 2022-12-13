@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- js -->
+  <script src="../js/jquery-3.3.1.min.js"></script><!-- 항상 우선순위로 링크 -->
+  <script src="../js/scrolla.jquery.min.js"></script> 
+  <script src="../js/script.js"></script>
+
+  <link rel="stylesheet" href="subscribe_style.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <!-- 타이틀아이콘변경 -->
+  <link rel="shortcut icon" type="image⁄x-icon" href="../img/codeplus_logo_title.png">
+  <title>코드플러스>구독안내</title>
+</head>
+<body>
+  <div class="allWrap">
+    <!-- 헤더영역시작 -->
+    <header class="header_wrap">
+      <div class="header_inner">
+        <h1 id="logo">
+          <a href="../index.html">
+            <img src="../img/codeplus_logo.png" alt="코드플러스 사이트로고">
+          </a>
+        </h1>
+        <nav class="mainmenu">
+          <h2 class="hidden">메인메뉴</h2>
+          <ul class="mainmenu_list">
+            <li><a href="../sub_info/info.html">CODE PLUS+</a>
+              <ul class="submenu_list">
+                <li><a href="#">코드플러스란?</a></li>
+                <li><a href="#">기업정신</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_subscribe/subscribe.html">구독안내</a>
+              <ul class="submenu_list">
+                <li><a href="#">무료체험</a></li>
+                <li><a href="#">프로모션</a></li>
+              </ul>
+            </li>
+            <li><a href="../sub_community/community.html">커뮤니티</a>
+              <ul class="submenu_list">
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">체험후기</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+            <li style="text-decoration: line-through; opacity: 0.5;"><a href="#">공지사항</a>
+              <ul class="submenu_list">
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">1:1문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="topmenu">
+          <h2 class="hidden">로그인회원가입</h2>
+          <ul class="topmenu_list">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </nav>
+        <!-- menuOpen -->
+        <nav class="hamburger">
+          <a href="#" class="open">
+            <span class="lnr lnr-menu"></span>
+          </a>
+          <div class="blur_bg"></div>
+          <div class="menuWrap">
+            <a href="#" class="close">
+              <span class="lnr lnr-cross"></span>
+            </a>
+            <ul class="tit en animate" data-animate="motion">
+              <li><a href="../index.html"><span>메인화면</span></a></li>
+              <li><a href="../sub_info/info.html"><span>CODE PLUS+</span></a></li>
+              <li><a href="subscribe.html"><span>구독안내</span></a></li>
+              <li><a href="../sub_community/community.html"><span>커뮤니티</span></a></li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더영역끝 -->
+    <!-- 비쥬얼영역시작 -->
+    <div class="visual_wrap">
+      <div class="bgColor"></div>
+      <div class="bgImg"></div>
+    </div>
+    <!-- 비쥬얼영역끝 -->
+    <!-- 강의목록영역시작 -->
+    <section class="class_wrap">
+      <div class="class_inner">
+        <h2 class="title animate" data-animate="motion">내게 맞는 강의코스를 찾아보세요.</h2>
+        <p class="title_text animate" data-animate="motion">프론트엔드 개발자부터 백엔드 엔지니어링, 알고리즘 등<br>IT개발능력 강화에 특화된 강의를 소개합니다.</p>
+        <ul class="course_list animate" data-animate="motion">
+          <li>
+            <p class="course_title">프론트엔드 엔지니어링</p>
+            <p class="course_text">사용자 친화적 웹 서비스 개발능력을 갖춘 프론트엔드 개발자 과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">백엔드 엔지니어링</p>
+            <p class="course_text">안정적인 웹 서비스를 효율적으로 구축하는 백엔드 개발자 양성과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">인공지능 (AI)</p>
+            <p class="course_text">데이터 사이언스 입문을 위한 A to Z</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">데브옵스 (DevOps)</p>
+            <p class="course_text">비전공자도 클라우드 서비스 개발은 물론 운영까지 한번에</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">Python 풀스택 개발</p>
+            <p class="course_text">프론트엔드부터 백엔드까지 모든 기술군에 대한 필수 과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">그로스 마케팅</p>
+            <p class="course_text">데이터 드리븐으로 사고하는 대체불가 마케터 양성과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">프로덕트 매니지먼트</p>
+            <p class="course_text">문제 정의부터 서비스 출시까지 PM실무 역량강화</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">블록체인</p>
+            <p class="course_text">개인 능력에 블록체인 실무 능력을 더하세요</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+        </ul>      
+      </div>
+    </section>
+    <!-- 강의목록영역끝 -->
+    <!-- 말풍선영역시작 -->
+    <section class="bubble_wrap">
+      <div class="bubble_inner animate" data-animate="motion">
+        <h2 class="hidden">강의무료체험</h2>
+        <div class="bubbleImg">
+        </div>
+        <div class="speech_bubble animate" data-animate="motion">
+          <p class="bubbletop">어디서부터 어떻게 어떤 강의를 들어야할지 잘 모르겠어요...<br>저에게 맞는 강의가 <span class="h_blue_bg">무엇인지 알고싶어요</span>!</p>
+          <p class="bubblebottom">걱정하지 마세요!<br>그럴줄 알고 저희가 <span class="h_green_bg">준비했어요</span> &#58;&#41; </p>
+        </div>
+      </div>
+    </section>
+    <!-- 말풍선영역끝 -->
+    <!-- 무료체험영역시작 -->
+    <section class="free_wrap">
+      <div class="free_box">
+        <img src="../img/first_marks_w.png" alt="큰따옴표">
+        <p class="free_text">코드플러스에서 코딩 적성검사 하면<br>무료수강권 7일을 드려요 :)</p>
+        <img src="../img/last_marks_w.png" alt="큰따옴표">
+        <button><a href="#">검사하러가기 &gt;</a></button>
+      </div>
+    </section>
+    <!-- 무료체험영역끝 -->
+    <!-- 푸터영역시작 -->
+    <footer class="footer_wrap">
+      <div class="footer_inner">
+        <h2 class="hidden">기업정보 푸터영역</h2>
+        <div class="footer_text">
+          <div class="footer_top">
+            <span class="footer_text_top">코드플러스</span>
+            <span class="footer_text_top">서비스 이용약관</span>
+            <span class="footer_text_top">개인정보 취급방침</span>
+          </div>
+          <div class="footer_bottom">
+            <span class="footer_text_bottom"><b>(주)코드플러스</b> | </span>
+            <span class="footer_text_bottom"><b>대표</b> 최백준 | </span>
+            <span class="footer_text_bottom"><b>사업자 등록번호</b> : 541-88-00682</span><br>
+            <span class="footer_text_bottom"><b>통신판매신고번호</b> : 제2017-서울서초-2193호 | </span>
+            <span class="footer_text_bottom"><b>주소</b> : 서울시 서초구 서초대로74길 29 서초파라곤 4층 412호</span>
+          </div>
+        </div>
+        <div class="footer_sns">
+          <span class="sns"><a href="#"><img src="../img/facebook.png" alt="페이스북아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/instagram.png" alt="인스타그램아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/twiter.png" alt="트위터아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/youtube.png" alt="유튜브아이콘"></a></span>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터영역끝 -->
+  </div>
+</body>
+</html>

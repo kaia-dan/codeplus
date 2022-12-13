@@ -1,0 +1,695 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* 기본설정 */
+html {
+  /* font-size:62.5%; */
+  font-size: 10px;
+}
+.hidden{
+  width:1px; height:1px; font-size:0px; line-height:0px;
+  position:absolute;
+}
+span.h_green_bg{
+  display: inline-block; line-height: 1.2;
+  padding: 0 3px;
+  border-radius: 50px; 
+  background: #92EADD;
+}
+span.h_blue_bg{
+  display: inline-block; line-height: 1.2;
+  padding: 0 3px;
+  border-radius: 50px; 
+  background: #938CF4;
+}
+
+/* 폰트 */
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
+}
+
+/* 공통타이틀시작 */
+h2.title{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 40px 44px;
+  word-break: keep-all;
+}
+p.title_text{
+  text-align: center;
+  color: #474747;
+  margin-bottom: 117px;
+}
+/* 공통타이틀끝 */
+
+/* 헤더영역 */
+/* menuOpen */
+.hamburger .blur_bg{
+  width: 100%; height: 100vh;
+  position: fixed; left: 0; top: 0;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s;
+  display: none;
+}
+.hamburger .menuWrap{
+  width: 0%; height: 100vh;
+  position: fixed; right: -70%; top: 0;
+  transition: all 0.3s;
+  background: #5347EE;
+}
+.hamburger .menuWrap .close{
+  width: 100%; display: block;
+  text-align: right;
+}
+.hamburger .menuWrap .close span{
+  margin-right: 2%; color: #fff;
+}
+.hamburger .menuWrap .tit{
+  width: 70%;
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem; line-height: 2.2; text-align: center;
+  color: #fff;
+}
+.hamburger .menuWrap .tit li{
+  transition: all 0.2s;
+}
+.hamburger .menuWrap .tit li:hover{
+  background:#52DEC9; border-radius: 50px;
+  transform: scale(1.1); color: #5347EE; font-weight: bold;
+}
+/* on */
+.hamburger.on .blur_bg{
+  display: block;
+}
+.hamburger.on .menuWrap{
+  width: 65%;
+  right: 0;
+}
+
+
+.header_wrap{
+  width: 100%; height: 80px; line-height: 80px; 
+  position: fixed;
+  transition: all 0.8s;
+  z-index: 10;
+}
+.header_inner{
+  width: 1450px; height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.header_inner #logo{
+  width: 121px; height: 100%;
+}
+.header_inner #logo a{
+  display: block;
+  width: 100%; height: 100%;
+}
+.header_inner #logo img{
+  display: block;
+  width: 100%;
+}
+.header_inner .mainmenu{
+  width:70%; height: 100%;
+  position: absolute; top: 0; left: 50%;
+  transform: translateX(-50%);
+}
+.header_inner .mainmenu .mainmenu_list{
+  width: 65%; height: 100%; margin: 0 auto;
+  display: flex; justify-content: space-between;
+}
+.header_inner .mainmenu .mainmenu_list > li{
+  width: 25%; height: 100%; text-align: center;
+  position: relative;
+}
+.header_inner .mainmenu .mainmenu_list > li > a{
+  display: block; width: 100%; height: 100%;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+.header_inner .mainmenu .mainmenu_list > li > a.on{
+  color: #5347EE;
+}
+
+.header_inner .topmenu{
+  width: 14%; height: 100%;
+  position: absolute; top: 0; right: 0;
+}
+.header_inner .topmenu .topmenu_list{
+  width: 100%; height: 100%;
+  display: flex; justify-content: space-between;
+}
+.header_inner .topmenu .topmenu_list li{
+  width: 50%; height: 100%; text-align: right;
+}
+.header_inner .topmenu .topmenu_list li a{
+  display: block; width: 100%; height: 100%;
+  font-size: 1.3rem;
+}
+
+/* 2depth */
+.header_inner .mainmenu .mainmenu_list li > .submenu_list{
+  width: 100%;
+  border-radius: 0 20px 0 20px;
+  background: #5c52ece8; overflow: hidden;
+}
+.header_inner .mainmenu .mainmenu_list li > .submenu_list > li{
+  width: 100%; height: 0px; line-height: 0px; opacity: 0;
+  transition: all 0.3s;
+}
+.header_inner .mainmenu .mainmenu_list li > .submenu_list > li:hover, .header_inner .mainmenu .mainmenu_list li > .submenu_list > li:focus{
+  background: #3e34c5e0;
+}
+.header_inner .mainmenu .mainmenu_list li > .submenu_list > li > a{
+  width: 100%;
+  font-size: 1.4rem; color: #fff;
+  position: absolute; left: 50%; transform: translateX(-50%);
+}
+.header_inner .mainmenu .mainmenu_list li > .submenu_list.on > li{
+  line-height: 40px;
+  height: 40px;
+  opacity: 1;
+}
+/* mo hamberger */
+.hamburger{
+  display: none;
+  position: absolute; top: 0; right: 0;
+  font-size: 4rem;
+}
+
+/* 비쥬얼 */
+.visual_wrap{
+  width: 100%;
+  margin: 0 auto 135px;
+  position: relative;
+}
+.bgColor{
+  width: 100%; height: 704px;
+  background: #f8f8f8;
+}
+.bgImg{
+  width: 100%; height: 704px;
+  position: absolute; top: 0;
+  background: url(../img/people.png)no-repeat center;
+  background-position-y: 59px;
+  padding-bottom: 70px;
+}
+
+
+/* 강의목록 */
+.class_wrap{
+  width: 100%;
+}
+.class_inner{
+  width: 1450px;
+  margin: 0 auto;
+}
+.class_inner .course_list{
+  width: 100%;
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  margin-bottom: 168px;
+}
+.class_inner .course_list li{
+  width: 23.4%; height: 288px;
+  position: relative;
+  margin-bottom: 28px; border-radius: 20px;
+  padding: 35px; box-sizing: border-box;
+  background: #f8f8f8; box-shadow: 3px 3px 3px #eeeeee;
+  transition: all 0.5s;
+}
+
+/* hover */
+.class_inner .course_list li:hover, .class_inner .course_list li:focus{
+  transform: translateY(-5px); transition: all 0.5s;
+}
+
+.class_inner .course_list li .course_title{
+  font-size: 1.8rem; font-weight: bold;
+  margin: 48px 0 22px; 
+}
+.class_inner .course_list li .course_text{
+  font-size: 1.4rem; color: #474747;
+}
+.class_inner .course_list li .course_btn{
+  width: 100px;
+  position: absolute; bottom: 35px;
+  background: #5347EE; color: #fff; font-size: 1.2rem; font-weight: bold;
+  border: 0px; outline: none;
+  padding: 9px; border-radius: 50px;
+  transition: all 0.18s;
+}
+.class_inner .course_list li .course_btn a{
+  display: block; width: 100%; height: 100%;
+}
+.class_inner .course_list li .plus{
+  font-size: 30px; font-weight: bold; color: #5347EE;
+  display: inline-block;
+  position: absolute; top: 24px;
+  transition: all 0.3s;
+}
+/* hover */
+.class_inner .course_list li .course_btn:hover, .class_inner .course_list li .course_btn:focus{
+  background: #52DEC9; transition: all 0.18s;
+}
+.class_inner .course_list li .course_btn:hover ~ .plus{
+  color: #52DEC9; transition: all 0.3s;
+}
+/* 강의목록+수강후기 공통타이틀animation */
+@keyframes class_review_ani {
+  0%{opacity: 0; transform: translateY(30px);}
+  20%{opacity: 0; transform: translateY(30px);}
+}
+.title.motion{
+  animation-name: class_review_ani; animation-duration: 1s;
+}
+.title_text.motion{
+  animation-name: class_review_ani; animation-duration: 1.5s;
+}
+.class_wrap .class_inner .course_list.motion li{
+  animation-name: class_review_ani; animation-duration: 0.5s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(2){
+  animation-name: class_review_ani; animation-duration: 0.8s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(3){
+  animation-name: class_review_ani; animation-duration: 1.1s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(4){
+  animation-name: class_review_ani; animation-duration: 1.4s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(5){
+  animation-name: class_review_ani; animation-duration: 1.7s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(6){
+  animation-name: class_review_ani; animation-duration: 2s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(7){
+  animation-name: class_review_ani; animation-duration: 2.3s;
+}
+.class_wrap .class_inner .course_list.motion li:nth-child(8){
+  animation-name: class_review_ani; animation-duration: 2.6s;
+}
+
+/* 말풍선 */
+.bubble_wrap{
+  width: 100%;
+  position: relative;
+}
+.bubble_inner{
+  width: 1450px; margin: 80px auto 0;
+  display: flex; justify-content: space-between;
+}
+.bubble_inner .bubbleImg{
+  background: url(../img/people_1.png)no-repeat center;
+  width: 40%;
+}
+.bubble_inner .speech_bubble{
+  width: 60%;
+  height: 552px;
+  padding-top: 58px; box-sizing: border-box;
+}
+
+.bubble_inner .speech_bubble .bubbletop{
+  width: 85%;
+  height: 150px;
+  background: #fff; 
+  border-radius: 80px 80px 80px 0; border: 2px solid #5347EE;
+  padding: 45px; box-sizing: border-box;
+  margin-bottom: 56px; 
+  word-break: keep-all;
+  /* padding-top: 37px; padding-left: 34px; box-sizing: border-box; */
+  text-align: center; font-size: 1.8rem; font-weight: bold;
+}
+.bubble_inner .speech_bubble .bubblebottom{
+  width: 70%; height: 150px;
+  float: right; margin-right: 60px;
+  background: #fff;
+  border-radius: 80px 80px 0 80px; border: 2px solid #52DEC9;
+  padding: 45px; box-sizing: border-box;
+  text-align: center; font-size: 1.8rem; font-weight: bold;
+}
+/* 말풍선animation */
+@keyframes bubble_people_ani{
+  0%{opacity: 0; transform: translateY(30px);}
+  30%{opacity: 0; transform: translateY(30px);}
+}
+@keyframes bubble_top_ani{
+  0%{opacity: 0; transform: translateX(-30px);}
+  30%{opacity: 0; transform: translateX(-30px);}
+}
+@keyframes bubble_bottom_ani{
+  0%{opacity: 0; transform: translateX(30px);}
+  30%{opacity: 0; transform: translateX(30px);}
+}
+section.bubble_wrap .bubble_inner.motion img{animation-name: bubble_people_ani; animation-duration: 1s;}
+section.bubble_wrap .bubble_inner.motion .speech_bubble .bubbletop_img,section.bubble_wrap .bubble_inner.motion .speech_bubble .bubbletop{animation-name: bubble_top_ani; animation-duration: 1.5s;}
+section.bubble_wrap .bubble_inner.motion .speech_bubble .bubblebottom_img,section.bubble_wrap .bubble_inner.motion .speech_bubble .bubblebottom{animation-name: bubble_bottom_ani; animation-duration: 2.5s;}
+
+
+
+/* 무료체험 */
+.free_wrap{
+  width: 100%; height: 1000px;
+  position: relative;
+  background: #5347EE;
+}
+.free_wrap .free_box{
+  width: 100%;
+  position: absolute; top: 52%;
+  margin-top: -280px;
+  text-align: center;
+}
+.free_wrap .free_box img{
+  margin: 0 auto;
+  display: block;
+}
+.free_wrap .free_box .free_text{
+  font-size: 4.0rem; font-weight: bold; color: #ffffff;
+  margin: 54px;
+}
+.free_wrap .free_box button{
+  padding: 20px; width: 200px;
+  border: 0px; outline: none;
+  font-size: 1.8rem; color: #ffffff; font-weight: bold;
+  background: #52DEC9; border-radius: 50px;
+  margin-top: 110px;
+  transition: all 0.3s;
+}
+.free_wrap .free_box button a{
+  display: block; width: 100%; height: 100%;
+}
+/* hover */
+.free_wrap .free_box button:hover, .free_wrap .free_box button:focus{
+  background: #8afce7; transition: all 0.3s;
+}
+/* 무료체험animation */
+@keyframes free_ani{
+  0%{transform: rotate(-5deg);}
+  25%{transform: rotate(5deg);}
+  50%{transform: rotate(-5deg);}
+  75%{transform: rotate(5deg);}
+  100%{transform: rotate(-5deg);}
+}
+.free_wrap .free_box > img{animation-name: free_ani; animation-duration: 3s; animation-direction: alternate; animation-iteration-count: infinite; }
+
+/* 푸터 */
+.footer_wrap{
+  width: 100%;
+  background: #5347EE;
+}
+.footer_inner{
+  width: 1450px; margin: 0 auto;
+  padding: 75px 0; box-sizing: border-box;
+  display: flex;
+}
+.footer_inner .footer_text{
+  width: 60%;
+}
+.footer_inner .footer_text .footer_top .footer_text_top{
+  display: inline-block;
+  margin-right: 30px; margin-bottom: 24px;
+  font-size: 1.2rem; color: #ffffff;
+}
+.footer_inner .footer_text .footer_bottom .footer_text_bottom{
+  display: inline-block;
+  font-size: 1.2rem; color: #ffffffb4;
+}
+.footer_inner .footer_sns{
+  width: 40%;
+  text-align: right;
+}
+.footer_inner .footer_sns .sns{
+  display: inline-block;
+  width: 35px; height: 35px;
+  margin-left: 5%;
+}
+.footer_inner .footer_sns .sns img{
+  width: 100%; height: 100%;
+}
+
+
+/* 모든섹션 inner의 max-width 반응점 */
+@media screen and (max-width: 1600px){
+  .header_inner{
+    width: 92%;
+  }
+  .visual_inner{
+    width: 92%;
+  }
+  .class_inner{
+    width: 92%;
+  }
+  .bubble_inner{
+    width: 92%;
+  }
+  .footer_inner{
+    width: 92%;
+  }
+}
+
+/* 1024px */
+@media screen and (max-width: 1024px){
+  html{
+    font-size: 8.9px;
+  }
+
+  /* 공통타이틀 */
+  h2.title{
+    margin-bottom: 30px;
+  }
+  p.title_text{
+    margin-bottom: 63px;
+  }
+
+  /* 헤더 */
+  .header_wrap{
+    width: 100%; height: 60px; line-height: 60px; 
+    position: fixed;
+    z-index: 10;
+  }
+  .header_inner{
+    width: 96%;
+  }
+  .header_inner #logo{
+    width: 92px;
+  }
+
+  /* 비쥬얼 */
+  .visual_wrap{
+    margin: 0 auto 80px;
+  }
+  .bgColor{
+    height: 517px;
+  }
+  .bgImg{
+    height: 517px;
+    background-size: 850px;
+  }
+
+  /* 강의목록 */
+  .class_inner{
+    width: 96%;
+  }
+  .class_inner .course_list{
+    margin-bottom: 0;
+  }
+  .class_inner .course_list li{
+    width: 32%;
+    margin-bottom: 20px;
+    padding: 22px;
+    height: 270px;
+  }
+  /* 3개정렬로 바뀌며 마지막2개 display:none */
+  .class_inner .course_list li:nth-child(7), .class_inner .course_list li:nth-child(8){
+    display: none;
+  }
+  .class_inner .course_list li .plus{
+    top: 12px;
+  }
+
+
+  /* 말풍선 */
+  .bubble_inner{
+    width: 96%;
+    margin-top: 70px;
+  }
+  .bubble_inner .bubbleImg{
+    width: 32%;
+    /* background-size: contain; */
+    background-size: 257px;
+  }
+  .bubble_inner .speech_bubble{
+    width: 68%; height: 418px;
+  }
+  .bubble_inner .speech_bubble .bubbletop{
+    width: 100%;
+    height: unset;
+    padding: 36px;
+  }
+  .bubble_inner .speech_bubble .bubblebottom{
+    width: 90%; margin-right: 0;
+    height: unset;
+    padding: 36px;
+  }
+
+
+  /* 무료체험 */
+  .free_wrap{
+    height: 750px;
+  }
+  .free_wrap .free_box{
+    top: 56%;
+  }
+  .free_wrap .free_box > img{
+    width: 64px;
+  }
+  .free_wrap .free_box .free_text{
+    font-size: 3.3rem;
+  }
+  .free_wrap .free_box button{
+    width: 174px;
+    padding: 17px;
+    font-size: 1.6rem;
+    margin-top: 79px;
+  }
+
+  /* 푸터 */
+  .footer_inner{
+    width: 96%;
+    padding: 60px 0;
+  }
+}
+
+/* 770px */
+@media screen and (max-width: 770px){
+  /* 공통타이틀 */
+  h2.title{
+    font-size: 2.3rem;
+  }
+  p.title_text{
+    margin-bottom: 74px;
+  }
+
+  /* 헤더 */
+  .hamburger{
+    display: block;
+  }
+  .mainmenu{
+    display: none;
+  }
+  .topmenu{
+    display: none;
+  }
+
+  /* 비쥬얼 */
+  .visual_wrap{
+    height: 409px;
+    margin: 0 auto 50px;
+  }
+  .bgColor{
+    height: 409px;
+  }
+  .bgImg{
+    background-size: 650px;
+  }
+
+  /* 강의목록 */
+  .class_inner .course_list li{
+    width: 49%; padding: 29px;
+  }
+    /* 2개정렬로 바뀌며 마지막2개 display:none */
+    .class_inner .course_list li:nth-child(7), .class_inner .course_list li:nth-child(8){
+      display: block;
+    }
+
+
+  /* 말풍선 */
+  .bubble_inner .bubbleImg{
+    display: none;
+  }
+  .bubble_inner .speech_bubble{
+    width: 100%;
+    padding-top: 25px;
+  }
+  .bubble_inner .speech_bubble .bubblebottom{
+    width: 100%;
+  }
+
+
+  /* 무료체험 */
+  .free_wrap .free_box button{
+    width: 130px; font-size: 1.4rem;
+  }
+  .free_wrap .free_box .free_text{
+    font-size: 2.8rem;
+  }
+
+  /* 푸터 */
+  .footer_inner{
+    padding: 42px 0;
+  }
+  .footer_inner .footer_sns .sns{
+    width: 30px; height: 30px;
+  }
+}
+
+/* 480px*/
+@media screen and (max-width: 479px){
+  html{
+    font-size: 58%;
+  }
+  
+  /* hamburger */
+  .hamburger .menuWrap .tit{
+    font-size: 2rem;
+  }
+
+  /* 비쥬얼 */
+  .bgImg{
+    background-size: 464px;
+  }
+  .bgColor{
+    height: 309px;
+  }
+  .visual_wrap{
+    height: unset;
+  }
+
+  /* 강의목록 */
+  h2.title{
+    margin: 0 0 20px;
+  }
+  .class_inner .course_list li{
+    width: 100%;
+  }
+  .class_inner .course_list li:nth-child(n+5){
+    display: none;
+  }
+
+  /* 무료수강 */
+  .free_wrap .free_box .free_text{
+    font-size: 2.4rem;
+    margin: 38px;
+  }
+
+  /* 수강후기 */
+  .review_inner .review_box li{
+    padding: 30px 30px;
+  }
+  .review_inner .review_box li .review{
+    -webkit-line-clamp: 3;
+  }
+
+  /* 푸터 */
+  .footer_inner .footer_text .footer_top .footer_text_top{
+    margin-right: 12px;
+  }
+  .footer_inner .footer_text{
+    width: 75%;
+  }
+  .footer_inner .footer_sns .sns{
+    width: 23px; height: 23px;
+  }
+}
