@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- js -->
+  <script src="js/jquery-3.3.1.min.js"></script><!-- 항상 우선순위로 링크 -->
+  <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/scrolla.jquery.min.js"></script> 
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!-- 타이틀아이콘변경 -->
+  <link rel="shortcut icon" type="image⁄x-icon" href="img/codeplus_logo_title.png">
+  <title>codeplus</title>
+</head>
+<body>
+  <div class="allWrap">
+    <!-- 헤더영역시작 -->
+    <header class="header_wrap">
+      <div class="header_inner">
+        <h1 id="logo">
+          <a href="index.html">
+            <img src="img/codeplus_logo.png" alt="코드플러스 사이트로고">
+          </a>
+        </h1>
+        <nav class="mainmenu">
+          <h2 class="hidden">메인메뉴</h2>
+          <ul class="mainmenu_list">
+            <li><a href="sub_info/info.html">CODE PLUS+</a>
+              <ul class="submenu_list">
+                <li><a href="#">코드플러스란?</a></li>
+                <li><a href="#">기업정신</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_subscribe/subscribe.html">구독안내</a>
+              <ul class="submenu_list">
+                <li><a href="#">무료체험</a></li>
+                <li><a href="#">프로모션</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_community/community.html">커뮤니티</a>
+              <ul class="submenu_list">
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">체험후기</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+            <li style="text-decoration: line-through; opacity: 0.5;"><a href="#">공지사항</a>
+              <ul class="submenu_list">
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">1:1문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="topmenu">
+          <h2 class="hidden">로그인회원가입</h2>
+          <ul class="topmenu_list">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </nav>
+        <!-- menuOpen -->
+        <nav class="hamburger">
+          <a href="#" class="open">
+            <span class="lnr lnr-menu"></span>
+          </a>
+          <div class="blur_bg"></div>
+          <div class="menuWrap">
+            <a href="#" class="close">
+              <span class="lnr lnr-cross"></span>
+            </a>
+            <ul class="tit en animate" data-animate="motion">
+              <li><a href="index.html"><span>메인화면</span></a></li>
+              <li><a href="sub_info/info.html"><span>CODE PLUS+</span></a></li>
+              <li><a href="sub_subscribe/subscribe.html"><span>구독안내</span></a></li>
+              <li><a href="sub_community/community.html"><span>커뮤니티</span></a></li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더영역끝 -->
+    <!-- 비쥬얼영역시작 -->
+    <div class="visual_wrap">
+      <div class="visual_inner">
+        <h2 class="hidden">비쥬얼영역</h2>
+        <ul class="visual_list">
+          <li>
+            <img class="first_marks" src="img/first_marks.png" alt="큰따옴표">
+            <p class="visual_title">탄탄한 기본기와 역량 강화에 필요한 지식으로 새로운 환경에 빠르게 적응할 수 있는 개발자로 성장하는 시간, 코드플러스와 함께 코딩 시작해요!</p>
+            <span><img class="last_marks" src="img/last_marks.png" alt="큰따옴표"></span>
+          </li>
+          <li>
+            <p class="imgbox">
+              <img src="img/main_visual_re.png" alt="메인비쥬얼이미지">
+              <div class="icoBox">
+                <img src="img/ico_python.png" alt="파이썬 아이콘" class="ico_py">
+                <img src="img/ico_javaScript.png" alt="자바스크립트 아이콘" class="ico_js">
+                <img src="img/ico_react.png" alt="리액트 아이콘" class="ico_re">
+              </div>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 비쥬얼영역끝 -->
+    <!-- 기업소개영역시작 -->
+    <section class="codeplus_wrap">
+      <div class="bgwrap">
+        <div class="codeplus_inner">
+          <h2 id="big_text">코드플러스는요<span>+</span></h2>
+          <div class="info_box">
+            <p class="info_text animate" data-animate="motion">쉽고 간단하게 배울 수 있는<br>코딩을 목표로 누구나<br><span class="h_green_bg">손쉽게</span> 집에서 코딩을<br>배울 수 있어요!</p>
+            <p class="info_text animate" data-animate="motion">코딩경험이 없는 사람도<br><span class="h_green_bg">어렵지 않게</span><br>참여할 수 있답니다 &#58;&#41;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 기업소개영역끝 -->
+    <!-- 강의목록영역시작 -->
+    <section class="class_wrap">
+      <div class="class_inner">
+        <h2 class="title animate" data-animate="motion">내게 맞는 강의코스를 찾아보세요.</h2>
+        <p class="title_text animate" data-animate="motion">프론트엔드 개발자부터 백엔드 엔지니어링, 알고리즘 등<br>IT개발능력 강화에 특화된 강의를 소개합니다.</p>
+        <ul class="course_list animate" data-animate="motion">
+          <li>
+            <p class="course_title">프론트엔드 엔지니어링</p>
+            <p class="course_text">사용자 친화적 웹 서비스 개발능력을 갖춘 프론트엔드 개발자 과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">백엔드 엔지니어링</p>
+            <p class="course_text">안정적인 웹 서비스를 효율적으로 구축하는 백엔드 개발자 양성과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">인공지능 (AI)</p>
+            <p class="course_text">데이터 사이언스 입문을 위한 A to Z</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">데브옵스 (DevOps)</p>
+            <p class="course_text">비전공자도 클라우드 서비스 개발은 물론 운영까지 한번에</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">Python 풀스택 개발</p>
+            <p class="course_text">프론트엔드부터 백엔드까지 모든 기술군에 대한 필수 과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">그로스 마케팅</p>
+            <p class="course_text">데이터 드리븐으로 사고하는 대체불가 마케터 양성과정</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">프로덕트 매니지먼트</p>
+            <p class="course_text">문제 정의부터 서비스 출시까지 PM실무 역량강화</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+          <li>
+            <p class="course_title">블록체인</p>
+            <p class="course_text">개인 능력에 블록체인 실무 능력을 더하세요</p>
+            <button class="course_btn"><a href="#">수강하기 &gt;</a></button>
+            <span class="plus">+</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 강의목록영역끝 -->
+    <!-- 말풍선영역시작 -->
+    <section class="bubble_wrap">
+      <div class="bubble_inner animate" data-animate="motion">
+        <h2 class="hidden">강의무료체험</h2>
+        <div class="bubbleImg">
+        </div>
+        <div class="speech_bubble animate" data-animate="motion">
+          <p class="bubbletop">어디서부터 어떻게 어떤 강의를 들어야할지 잘 모르겠어요... 저에게 맞는 강의가 <span class="h_blue_bg">무엇인지 알고싶어요</span>!</p>
+          <p class="bubblebottom">걱정하지 마세요!<br>그럴줄 알고 저희가 <span class="h_green_bg">준비했어요</span> &#58;&#41; </p>
+        </div>
+      </div>
+    </section>
+    <!-- 말풍선영역끝 -->
+    <!-- 무료체험영역시작 -->
+    <section class="free_wrap">
+      <div class="free_box">
+        <img src="img/first_marks_w.png" alt="큰따옴표">
+        <p class="free_text">코드플러스에서 코딩 적성검사 하면<br>무료수강권 7일을 드려요 :)</p>
+        <img src="img/last_marks_w.png" alt="큰따옴표">
+        <button><a href="#">검사하러가기 &gt;</a></button>
+      </div>
+    </section>
+    <!-- 무료체험영역끝 -->
+    <!-- 수강후기영역시작 -->
+    <section class="review_wrap">
+      <div class="review_inner">
+        <h2 class="title animate" data-animate="motion">코드플러스와 함께한 도전에 성공한 수강생들의 후기가 이어지고 있어요</h2>
+        <p class="title_text animate" data-animate="motion">여러분도 충분히 할 수 있어요! 우리 함께 공부해요 :)</p>
+        <ul class="review_box animate" data-animate="motion">
+          <li>
+            <p class="profile"><img src="img/profile_icon_f.png " alt="프로필사진"></p>
+            <p class="name">김&#42;정</p>
+            <p class="job">프론트엔드 엔지니어</p>
+            <p class="review">과제 중심의 커리큘럼을 통해, 스스로 코드를 작성하는 실력을 키울 수 있다는 점이 코드플러스의 가장 큰 장점인것 같아요. 그 덕분에, 스스로의 실력과 전문성을 빠르게 성장시킬 수 있었고, 원하는 회사에서 일할 수 있게 되었습니다. 취업 이후에도 스스로 부족한 부분을 보충할 수 있었고, 수료한 이후에도 계속해서 성장하고 있습니다.</p>
+          </li>
+          <li>
+            <p class="profile"><img src="img/profile_icon_m.png" alt="프로필사진"></p>
+            <p class="name">이&#42;서</p>
+            <p class="job">데이터 사이언티스트</p>
+            <p class="review">매일매일 새로운 것을 배우고, 질문하고, 고민하고, 해결하며 성장해나가는 기분이 좋았습니다. 막막했던 적도 많았지만 꾸준히 노력하고 공부 해 한 발짝씩 내딛게 되었습니다. 강의 내용뿐만 아니라 시간을 관리하는 방법, 회고를 통한 메타인지, 효율적인 공부 방법 등 일상 속에서도 중요한 것들을 많이 배웠던 소중했던 경험이었습니다.</p>
+          </li>
+          <li>
+            <p class="profile"><img src="img/profile_icon_l.png " alt="프로필사진"></p>
+            <p class="name">김&#42;단</p>
+            <p class="job">취준생</p>
+            <p class="review">다이나믹 프로그래밍을 적용할 수 있는 여러 가지 문제를 풀어주면서 어떻게 다이나믹을 적용하면 되는지를 자세하게 알려줍니다. 굉장히 마음에 드는 강의였고, 반복해서 주어지는 문제풀이 덕에 도움이 많이 되었어요 감사합니다!</p>
+          </li>
+        </ul>
+      </div>
+      <!-- <p class="arr left"><a href="#"><img src="img/arr_left.png" alt="왼쪽화살표"></a></p>
+      <p class="arr right"><a href="#"> <img src="img/arr_right.png" alt="오른쪽화살표"></a></p> -->
+    </section>
+    <!-- 수강후기영역끝 -->
+    <!-- 마무리영역시작 -->
+    <section class="fight_wrap">
+      <div class="fight_inner">
+        <h2 class="hidden">마무리 응원글</h2>
+        <p class="fight_text"><span class="plus">+</span> 코드플러스가<br><span class="h_green_bg">당신의 IT를 응원합니다</span> &#58;&#41;</p>
+      </div>
+    </section>
+    <!-- 마무리영역끝 -->
+    <!-- 푸터영역시작 -->
+    <footer class="footer_wrap">
+      <div class="footer_inner">
+        <h2 class="hidden">기업정보 푸터영역</h2>
+        <div class="footer_text">
+          <div class="footer_top">
+            <span class="footer_text_top">코드플러스</span>
+            <span class="footer_text_top">서비스 이용약관</span>
+            <span class="footer_text_top">개인정보 취급방침</span>
+          </div>
+          <div class="footer_bottom">
+            <span class="footer_text_bottom"><b>(주)코드플러스</b> | </span>
+            <span class="footer_text_bottom"><b>대표</b> 최백준 | </span>
+            <span class="footer_text_bottom"><b>사업자 등록번호</b> : 541-88-00682</span><br>
+            <span class="footer_text_bottom"><b>통신판매신고번호</b> : 제2017-서울서초-2193호 | </span>
+            <span class="footer_text_bottom"><b>주소</b> : 서울시 서초구 서초대로74길 29 서초파라곤 4층 412호</span>
+          </div>
+        </div>
+        <div class="footer_sns">
+          <span class="sns"><a href="#"><img src="img/facebook.png" alt="페이스북아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="img/instagram.png" alt="인스타그램아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="img/twiter.png" alt="트위터아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="img/youtube.png" alt="유튜브아이콘"></a></span>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터영역끝 -->
+  </div>
+</body>
+</html>
