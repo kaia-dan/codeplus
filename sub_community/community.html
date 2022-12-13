@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- js -->
+  <script src="../js/jquery-3.3.1.min.js"></script><!-- 항상 우선순위로 링크 -->
+  <script src="../js/script.js"></script>
+
+  <link rel="stylesheet" href="community_style.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <!-- 타이틀아이콘변경 -->
+  <link rel="shortcut icon" type="image⁄x-icon" href="../img/codeplus_logo_title.png">
+  <title>코드플러스>커뮤니티</title>
+</head>
+<body>
+  <div class="allWrap">
+    <!-- 헤더영역시작 -->
+    <header class="header_wrap">
+      <div class="header_inner">
+        <h1 id="logo">
+          <a href="../index.html">
+            <img src="../img/codeplus_logo.png" alt="코드플러스 사이트로고">
+          </a>
+        </h1>
+        <nav class="mainmenu">
+          <h2 class="hidden">메인메뉴</h2>
+          <ul class="mainmenu_list">
+            <li><a href="../sub_info/info.html">CODE PLUS+</a>
+              <ul class="submenu_list">
+                <li><a href="#">코드플러스란?</a></li>
+                <li><a href="#">기업정신</a></li>
+              </ul>
+            </li>
+            <li><a href="../sub_subscribe/subscribe.html">구독안내</a>
+              <ul class="submenu_list">
+                <li><a href="#">무료체험</a></li>
+                <li><a href="#">프로모션</a></li>
+              </ul>
+            </li>
+            <li><a href="sub_community/community.html">커뮤니티</a>
+              <ul class="submenu_list">
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">체험후기</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+            <li style="text-decoration: line-through; opacity: 0.5;"><a href="#">공지사항</a>
+              <ul class="submenu_list">
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">1:1문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="topmenu">
+          <h2 class="hidden">로그인회원가입</h2>
+          <ul class="topmenu_list">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </nav>
+        <!-- menuOpen -->
+        <nav class="hamburger">
+          <a href="#" class="open">
+            <span class="lnr lnr-menu"></span>
+          </a>
+          <div class="blur_bg"></div>
+          <div class="menuWrap">
+            <a href="#" class="close">
+              <span class="lnr lnr-cross"></span>
+            </a>
+            <ul class="tit en animate" data-animate="motion">
+              <li><a href="../index.html"><span>메인화면</span></a></li>
+              <li><a href="../sub_info/info.html"><span>CODE PLUS+</span></a></li>
+              <li><a href="../sub_subscribe/subscribe.html"><span>구독안내</span></a></li>
+              <li><a href="community.html"><span>커뮤니티</span></a></li>
+              <li><a href="#"><span>공지사항</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더영역끝 -->
+    <!-- 비쥬얼영역시작 -->
+    <div class="visual_wrap">
+      <div class="visual_inner">
+        <div class="left_box">
+          <p class="min_text">&#183; 각종 자료와 글을 모아 보세요 :)</p>
+          <h2 class="visual_title">커뮤니티</h2>
+        </div>
+        <div class="right_box">
+          <button><a href="#">자유게시판</a></button>
+          <button><a href="#">자료실</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- 비쥬얼영역끝 -->
+    <!-- 컨텐츠영역시작 -->
+    <section class="contents_wrap">
+      <div class="contents_inner">
+        <ul class="contents_list">
+          <li>
+            <a href="#">
+              <span class="category">질문</span>
+              <div class="textBox">
+                <span class="name">김*정</span>
+                <span class="date">2022. 12. 05</span>
+                <p class="title">javaScript 고수님들 도와주세요</p>
+                <p class="text">예제보며 차근차근 하고있는데 오타가 난건지 제가 잘못하고 있는건지.. 몇 시간째 방황중이에요.. 검토 도와주실 고수님들 부탁드립니다..</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category">질문</span>
+              <div class="textBox">
+                <span class="name">kaiaaa</span>
+                <span class="date">2022. 11. 13</span>
+                <p class="title">제가 너무 복잡하게 하는걸까요 ㅎㅎ..</p>
+                <p class="text">남들은 쉽게쉽게 하는데 저만 혼자 어렵게 생각한 느낌이 들어요 이렇게 꾸준히 해도 되는걸까요.. 코드 자체에 대한 지적도 좋고, 고쳐야할 점이 보인다면 해당 지적도 좋습니다. 괜히 너무 복잡하게 짠건 아닌가 잘못된 습관이 있는건지.. 조언 부탁합니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category">가입인사</span>
+              <div class="textBox">
+                <span class="name">김*단</span>
+                <span class="date">2022. 06. 07</span>
+                <p class="title">Python 풀스택 준비하러 왔어요</p>
+                <p class="text">안녕하세요. 반갑습니다. 코드플러스에서 차근차근 공부해보려고 구독 했어요 잘 부탁드려요~</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category">홍보</span>
+              <div class="textBox">
+                <span class="name">영진닷컴</span>
+                <span class="date">2022. 09. 07</span>
+                <p class="title">&#171;백엔드를 위한 Go 프로그래밍&#187;서평이벤트</p>
+                <p class="text">안녕하세요. 영진닷컴입니다.<br>이번에 &#8249;백엔드를 위한 Go 프로그래밍&#62;이 출간되었습니다. 기존의 책과 달리 공통 문법 관련 내용은 과감히 축소하고, 언어의 핵심 기능을 위주로 설명하여 이미 언어를 알고 있는 프로그래머나 전공자가 불필요한 내용을 배울 필요 없이 Go를 빠르게 익히기에 적합합니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category">홍보</span>
+              <div class="textBox">
+                <span class="name">sunrise</span>
+                <span class="date">2022. 09. 06</span>
+                <p class="title">[카카오]2023 신입 개발자 블라인드 채용 중!</p>
+                <p class="text">가보지 않은 길에 거침없이 도전하고 싶다면? '더 나음'을 만드는 카카오의 발걸음에 함께하고 싶다면? 2023 카카오 신입 개발자 블라인드 채용에서 넥스트 카카오크루를 기다립니다!♡</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="category">질문</span>
+              <div class="textBox">
+                <span class="name">romi</span>
+                <span class="date">2022. 08. 29</span>
+                <p class="title">자바스크립트 입력값에 대한 질문이 있습니다.</p>
+                <p class="text">시간과 분 그리고 요리하는 시간 입력값을 다음과 같이 받았는데 콘솔을 찍어보면 [14, 20] 이런 결과 값이 나옵니다. 왜 그런걸까요? 형변환을 미리 해줘서 그런 것일까요? </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 컨텐츠영역끝 -->
+    <!-- 푸터영역시작 -->
+    <footer class="footer_wrap">
+      <div class="footer_inner">
+        <h2 class="hidden">기업정보 푸터영역</h2>
+        <div class="footer_text">
+          <div class="footer_top">
+            <span class="footer_text_top">코드플러스</span>
+            <span class="footer_text_top">서비스 이용약관</span>
+            <span class="footer_text_top">개인정보 취급방침</span>
+          </div>
+          <div class="footer_bottom">
+            <span class="footer_text_bottom"><b>(주)코드플러스</b> | </span>
+            <span class="footer_text_bottom"><b>대표</b> 최백준 | </span>
+            <span class="footer_text_bottom"><b>사업자 등록번호</b> : 541-88-00682</span><br>
+            <span class="footer_text_bottom"><b>통신판매신고번호</b> : 제2017-서울서초-2193호 | </span>
+            <span class="footer_text_bottom"><b>주소</b> : 서울시 서초구 서초대로74길 29 서초파라곤 4층 412호</span>
+          </div>
+        </div>
+        <div class="footer_sns">
+          <span class="sns"><a href="#"><img src="../img/facebook.png" alt="페이스북아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/instagram.png" alt="인스타그램아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/twiter.png" alt="트위터아이콘"></a></span>
+          <span class="sns"><a href="#"><img src="../img/youtube.png" alt="유튜브아이콘"></a></span>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터영역끝 -->
+  </div>
+</body>
+</html>
